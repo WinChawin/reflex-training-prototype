@@ -1,0 +1,38 @@
+body {
+    background-color: #f0f0f0;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#output-canvas {
+    border: 3px solid #333;
+    background-color: #000;
+    border-radius: 8px;
+    width: 640px; /* กำหนดขนาดที่ต้องการ */
+    height: 480px;
+}
+
+#start-button {
+    font-size: 1.2em;
+    padding: 10px 25px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#stats-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 640px;
+    margin: 10px auto;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#timer {
+    color: #0056b3;
+}
+
+#score {
+    color: #28a745;
+}

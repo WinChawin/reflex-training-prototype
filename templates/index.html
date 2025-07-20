@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>Boxing Reflex Trainer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>ฝึก Head Movement</h1>
+
+    <div id="stats-container">
+        <div id="timer">เวลา: 01:30</div>
+        <div id="score">คะแนน: 0</div>
+    </div>
+
+    <div id="game-container">
+        <video id="video" playsinline muted style="display: none;"></video>
+        
+        <canvas id="output-canvas"></canvas>
+    </div>
+
+    <button id="start-button">เริ่มซ้อม</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+
+    <script src="{{ url_for('static', filename='js/ui.js') }}"></script>           <script src="{{ url_for('static', filename='js/game.js') }}"></script>         <script src="{{ url_for('static', filename='js/faceDetector.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/camera.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
